@@ -15,9 +15,9 @@ class Client:
             
         self.session = requests.Session()
         self.session.headers.update({
-            "X-API-Key": self.api_key,
+            "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json",
-            "User-Agent": "VentawPythonSDK/0.1.0"
+            "User-Agent": "VentawPythonSDK/0.1.2"
         })
 
     def request(self, method: str, path: str, **kwargs) -> Any:

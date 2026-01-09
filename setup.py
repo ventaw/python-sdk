@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="ventaw",
-    version="0.1.0",
+    version="0.1.2",
     description="Python SDK for Ventaw AI Sandboxes",
     author="Ventaw",
     author_email="support@ventaw.com",
